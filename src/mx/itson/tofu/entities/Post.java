@@ -15,4 +15,5 @@ public class Post {
     int like;
     int dislike;
     
+    
 }
