@@ -13,6 +13,7 @@ public class Usser {
     private String name;
     private String email;
     private String password;
+    
 
     /**
      * @return the name

@@ -10,6 +10,7 @@ package mx.itson.tofu.entities;
  * @author avalo
  */
 public class Post {
+    private String title;
     private String description;
     private Usser user;
     private int like;
@@ -114,6 +115,20 @@ public class Post {
      */
     public void setCategory(Category category) {
         this.category = category;
+    }
+
+    /**
+     * @return the title
+     */
+    public String getTitle() {
+        return title;
+    }
+
+    /**
+     * @param tittle the titulo to set
+     */
+    public void setTitle(String title) {
+        this.title = title;
     }
     
     
