@@ -37,19 +37,23 @@ public class Tofu_Post {
         
         Post post = new Post ();
         post.setTitle("La adopción en la nube");
-        post.setDescription("La computación en la nube ha transformado la forma en que se desarrolla y se despliega el software \nPermite a los desarrolladores acceder a recursos escalables y flexibles, lo que facilita la creación y la\ngestión de aplicaciones. La nube también ha permitido la aparición de servicios de software como servicio (SaaS), \ndonde los usuarios pueden acceder a aplicaciones directamente a través de Internet sin necesidad de instalarlas en sus dispositivos.");
+        post.setDescription("La computación en la nube ha transformado la forma en que se desarrolla y se despliega el software \nPermite a los desarrolladores acceder a recursos escalables y flexibles, lo que facilita la creación y la\ngestión de aplicaciones. La nube también ha permitido la aparición de servicios de software como servicio (SaaS), \ndonde los usuarios pueden acceder a aplicaciones directamente a través de Internet sin necesidad de instalarlas en \nsus dispositivos.");
         post.setComments(user2.getName()+": Orale que padre");
         post.setLike(23);
         post.setDislike(10);
         post.setDate("18 de octubre del 2023");
         post.setUser(user);
-        post.getCategory();
+        post.setCategory(category);
         
         System.out.println("-------------"+post.getTitle().toUpperCase()+"-------------");
-        System.out.println("Descripción: " + post.getDescription());
-        System.out.println("By: " + user.getName() );
-        System.out.println("LIKES " + post.getLike() + "      DISLIKES " + post.getDislike());
-        System.out.println(post.getComments());
+        System.out.println("DESCRIPTION: " + post.getDescription());
+        System.out.println("https://www.aboutespanol.com/thmb/8BscW9bK2MXHxqPR9yuhf-V0v0w=/2121x1193/smart/filters:no_upscale()/Almacenamientoenlanube-5b0a965d1d6404003700653f.jpg");
+        System.out.println("                             "+"BY: " + user.getName() );
+        System.out.println("LIKES " + post.getLike() + "                    " + " DISLIKES " + post.getDislike());
+        System.out.println("DATE: " + post.getDate() + "          " + "CATEGORY: " + post.getCategory().getName());
+        System.out.println(" ");
+        System.out.println("REPLY... " +post.getComments());
+        System.out.println("------------------------------------------------------------");
         
        
     }
