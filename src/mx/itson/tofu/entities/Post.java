@@ -14,6 +14,7 @@ public class Post {
     Usser user;
     int like;
     int dislike;
+    String comments;
     
     
 }
